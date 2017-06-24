@@ -6,4 +6,14 @@
     <string name="password">password</string>
     <string name="new_register">New Register</string>
     <string name="name">name</string>
+
+    <!--For Dialog-->
+    <string name="titleNameSpace">มีช่องว่าง</string>
+    <string name="MessageNullSpace">กรุณากรอกทุกช่อง</string>
+    <string name="titleUserFalse">User False</string>
+    <string name="MessageUserFalse">ไม่มี User นี้ในฐานข้อมูล</string>
+    <string name="titlePasswordfalse">Password ผิด</string>
+    <string name="MessagePasswordFalse">ลองใหม่ Password ผิด</string>
+
+
 </resources>
