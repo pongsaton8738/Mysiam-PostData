@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.siam.runrana.tusaphom.mysiam.Myindex">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_siam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:padding="@dimen/padding"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <TextView
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/h1"
+            android:text="@string/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/padding"
+        android:background="#82000000"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/logo_siam"
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@mipmap/ic_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:textColorHint="@color/colorPrimarylight"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="@string/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_pass" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:textColorHint="@color/colorPrimarylight"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNewregister"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/h2"
+            android:text="@string/new_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:clickable="true"
+        android:textColor="@color/textColorPrimary"
+        android:text="@string/login"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
