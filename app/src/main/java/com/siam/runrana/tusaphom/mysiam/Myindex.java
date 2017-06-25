@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -103,6 +104,18 @@ public class Myindex extends AppCompatActivity {
             if (b) {
                 MyAlert.myDialog(getResources().getString(R.string.titleUserFalse),
                         getResources().getString(R.string.MessageUserFalse));
+            } else if (passworsString.equals(loginStrings1[3])) {
+                Toast.makeText(Myindex.this,"Welcome" + loginStrings1[1],
+                        Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(Myindex.this,MapsActivity.class);
+                intent.putExtra("Login",loginStrings1);
+                startActivity(intent);
+                finish();
+
+            } else {
+                MyAlert.myDialog(getResources().getString(R.string.titlePasswordfalse),
+                        getResources().getString(R.string.MessagePasswordFalse));
             }
 
 
